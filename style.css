@@ -18,9 +18,8 @@ body.dark {
     align-items: center;
     padding: 15px 30px;
     background: white;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+    border-bottom: 2px solid black;
+    flex-wrap: wrap;
 }
 
 body.dark .header {
@@ -28,28 +27,44 @@ body.dark .header {
 }
 
 .logo-text {
-    font-size: 28px;
+    font-size: 36px;
     color: #0b2a66;
 }
 
-.menu-toggle {
-    display: none;
-    font-size: 24px;
-    cursor: pointer;
+.nav-links {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .nav-links a {
     margin: 0 10px;
-    font-size: 20px;
+    font-size: 24px;
     text-decoration: none;
 }
 
 .dark-btn {
-    margin-left: 10px;
+    margin-left: 15px;
     padding: 5px 10px;
     cursor: pointer;
 }
 
+/* Mobile Responsive */
+@media (max-width: 768px) {
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        margin-top: 10px;
+    }
+
+    .logo-text {
+        font-size: 28px;
+    }
+}
 /* LOGO */
 .logo-section {
     text-align: center;
