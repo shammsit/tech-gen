@@ -1,75 +1,61 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tech Gen</title>
+/* HEADER FIX */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: #dcdcdc;
+    border-bottom: 2px solid black;
+    flex-wrap: wrap;   /* 🔥 Important Fix */
+}
 
-<link rel="stylesheet" href="style.css">
+.logo-text {
+    font-size: 40px;
+    color: #0b2a66;
+    margin: 0;
+}
 
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-</head>
+.social-icons {
+    display: flex;
+    flex-wrap: wrap;   /* 🔥 Important Fix */
+    justify-content: flex-end;
+}
 
-<body>
+.social-icons a {
+    margin-left: 10px;
+    font-size: 26px;
+    text-decoration: none;
+}
 
-<header class="header">
+.dark-btn {
+    margin-left: 10px;
+    padding: 4px 8px;
+    cursor: pointer;
+}
 
-    <h1 class="logo-text">Tech Gen</h1>
+/* MOBILE FIX */
+@media (max-width: 768px) {
 
-    <div class="nav-links">
-        <a href="https://youtube.com/@degree2code?si=CdZzpbszdMazziYV" target="_blank">
-            <i class="fab fa-youtube"></i>
-        </a>
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
-        <a href="https://t.me/degree2code" target="_blank">
-            <i class="fab fa-telegram"></i>
-        </a>
+    .social-icons {
+        width: 100%;
+        justify-content: flex-start;
+        margin-top: 10px;
+    }
 
-        <!-- Add Instagram link -->
-        <a href="#"><i class="fab fa-instagram"></i></a>
+    .logo-text {
+        font-size: 28px;
+    }
 
-        <!-- Add Facebook link -->
-        <a href="#"><i class="fab fa-facebook"></i></a>
-
-        <a href="mailto:tech.gen.2005@gmail.com">
-            <i class="fas fa-envelope"></i>
-        </a>
-
-        <!-- Add WhatsApp link -->
-        <a href="#"><i class="fab fa-whatsapp"></i></a>
-
-        <!-- Dark mode button -->
-        <button class="dark-btn" onclick="toggleDark()">🌙</button>
-    </div>
-
-</header>
-
-<!-- LOGO -->
-<section class="logo-section fade-in">
-    <img src="logo.png" alt="Tech Gen Logo">
-</section>
-
-<!-- PROJECTS -->
-<section class="projects fade-in">
-    <h2>Our Projects</h2>
-
-    <div class="project-grid">
-
-        <div class="safe-link" onclick="openSafeLink()">SAFE-LINK</div>
-
-        <div class="card">Another Projects Coming Soon...</div>
-        <!--
-        <div class="card">Coming Soon</div>
-        <div class="card">Coming Soon</div>
-        <div class="card">Coming Soon</div>
-        <div class="card">Coming Soon</div>
-        <div class="card">Coming Soon</div>
-        <div class="card">Coming Soon</div>
-        -->
-    </div>
-</section>
-
+    .social-icons a {
+        font-size: 22px;
+        margin-right: 10px;
+    }
+}
 <!-- TEAM -->
 <section class="members fade-in">
 
