@@ -7,62 +7,46 @@
 
 <link rel="stylesheet" href="style.css">
 
-<!-- Font Awesome -->
 <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
 </head>
+
 <body>
 
 <header class="header">
 
-    <h1 class="title">Tech Gen</h1>
+    <h1 class="logo-text">Tech Gen</h1>
 
-    <div class="social-icons">
-        <a href="https://youtube.com/@degree2code?si=CdZzpbszdMazziYV" target="_blank">
-            <i class="fab fa-youtube"></i>
-        </a>
-
-        <a href="https://t.me/degree2code" target="_blank">
-            <i class="fab fa-telegram"></i>
-        </a>
-
-        <!-- Add Instagram Link Here -->
-        <a href="#"><i class="fab fa-instagram"></i></a>
-
-        <!-- Add Facebook Link Here -->
-        <a href="#"><i class="fab fa-facebook"></i></a>
-
-        <a href="mailto:tech.gen.2005@gmail.com">
-            <i class="fas fa-envelope"></i>
-        </a>
-
-        <!-- Add WhatsApp Link Here -->
-        <a href="#"><i class="fab fa-whatsapp"></i></a>
+    <!-- Hamburger -->
+    <div class="menu-toggle" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
     </div>
+
+    <nav class="nav-links" id="navLinks">
+        <a href="https://youtube.com/@degree2code?si=CdZzpbszdMazziYV" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://t.me/degree2code" target="_blank"><i class="fab fa-telegram"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a> <!-- Add link -->
+        <a href="#"><i class="fab fa-facebook"></i></a> <!-- Add link -->
+        <a href="mailto:tech.gen.2005@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a> <!-- Add link -->
+        <button class="dark-btn" onclick="toggleDark()">🌙</button>
+    </nav>
 
 </header>
 
-<hr>
-
 <!-- LOGO -->
-<section class="logo-section">
-    <!-- Keep logo.png in same folder -->
+<section class="logo-section fade-in">
     <img src="logo.png" alt="Tech Gen Logo">
 </section>
 
 <!-- PROJECTS -->
-<section class="projects">
-
-    <h2>Our Projects :</h2>
+<section class="projects fade-in">
+    <h2>Our Projects</h2>
 
     <div class="project-grid">
 
-        <div class="safe-link" onclick="openSafeLink()">
-            SAFE-LINK
-        </div>
+        <div class="safe-link" onclick="openSafeLink()">SAFE-LINK</div>
 
-        <!-- Add project link here -->
         <div class="card">Coming Soon</div>
         <div class="card">Coming Soon</div>
         <div class="card">Coming Soon</div>
@@ -72,31 +56,21 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
         <div class="card">Coming Soon</div>
 
     </div>
-
 </section>
 
-<!-- MEMBERS -->
-<section class="members">
+<!-- TEAM -->
+<section class="members fade-in">
 
     <h2>Team Members</h2>
 
-    <div class="member-table">
+    <div class="member-card">
+        <h3>Shamanta Garai</h3>
+        <p>Leader (2025–Current)</p>
+    </div>
 
-        <div class="table-header">
-            <div>Member Name</div>
-            <div>Member Position</div>
-        </div>
-
-        <div class="table-row">
-            <div>Shamanta Garai</div>
-            <div>Leader</div>
-        </div>
-
-        <div class="table-row">
-            <div>Tanwisha Mondal</div>
-            <div>1<sup>st</sup> Member (Speaker)</div>
-        </div>
-
+    <div class="member-card">
+        <h3>Tanwisha Mondal</h3>
+        <p>1<sup>st</sup> Member (Speaker) (2025–Current)</p>
     </div>
 
 </section>
