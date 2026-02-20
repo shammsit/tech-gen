@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tech Gen</title>
+
+<!-- Font Awesome for Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#dcdcdc;
+}
+
+/* HEADER */
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:10px 30px;
+    border-bottom:2px solid black;
+}
+
+.header h1{
+    color:#0b2a66;
+    font-size:40px;
+}
+
+/* Logo Center */
+.logo{
+    text-align:center;
+    margin:20px 0;
+}
+
+.logo img{
+    width:120px;
+    border:2px solid black;
+    padding:10px;
+}
+
+/* Social Icons */
+.social-icons{
+    position:absolute;
+    top:20px;
+    right:30px;
+}
+
+.social-icons i{
+    font-size:30px;
+    margin:8px;
+    cursor:pointer;
+}
+
+/* Project Section */
+.projects{
+    border:2px solid black;
+    margin:20px 40px;
+    padding:20px;
+}
+
+.projects h2{
+    margin-bottom:20px;
+}
+
+.project-grid{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:20px;
+}
+
+/* SAFE LINK */
+.safe-link{
+    background:black;
+    color:red;
+    font-weight:bold;
+    font-size:24px;
+    text-align:center;
+    padding:20px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.safe-link:hover{
+    background:red;
+    color:white;
+}
+
+/* Coming Soon Cards */
+.card{
+    background:#87a9d6;
+    padding:30px;
+    text-align:center;
+    font-size:22px;
+    border:1px solid #3c6ea5;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.card:hover{
+    background:#3c6ea5;
+    color:white;
+}
+
+/* Members Table */
+.members{
+    margin:40px 100px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th, td{
+    padding:15px;
+    text-align:left;
+}
+
+th{
+    border-bottom:2px solid black;
+}
+
+tr:nth-child(even){
+    background:#bfbfbf;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="header">
+    <h1>Tech Gen</h1>
+</div>
+
+<!-- LOGO -->
+<div class="logo">
+    <img src="logo.png" alt="Logo">
+</div>
+
+<!-- SOCIAL ICONS -->
+<div class="social-icons">
+    <i class="fab fa-youtube" style="color:red;"></i>
+    <i class="fab fa-instagram" style="color:#E1306C;"></i>
+    <i class="fab fa-facebook" style="color:#1877F2;"></i>
+    <i class="fab fa-telegram" style="color:#0088cc;"></i>
+    <i class="fas fa-envelope" style="color:#D44638;"></i>
+    <i class="fab fa-whatsapp" style="color:#25D366;"></i>
+</div>
+
+<!-- PROJECT SECTION -->
+<div class="projects">
+    <h2>Our Projects :</h2>
+
+    <div class="project-grid">
+
+        <div class="safe-link" onclick="openSafeLink()">SAFE-LINK</div>
+
+        <div class="card">Coming Soon</div>
+        <div class="card">Coming Soon</div>
+        <div class="card">Coming Soon</div>
+
+        <div class="card">Coming Soon</div>
+        <div class="card">Coming Soon</div>
+        <div class="card">Coming Soon</div>
+        <div class="card">Coming Soon</div>
+
+    </div>
+</div>
+
+<!-- MEMBERS SECTION -->
+<div class="members">
+    <table>
+        <tr>
+            <th>Member Name</th>
+            <th>Member Position</th>
+        </tr>
+        <tr>
+            <td>Shamanta Garai</td>
+            <td>Leader</td>
+        </tr>
+        <tr>
+            <td>Tanwisha Mondal</td>
+            <td>1<sup>st</sup> Member (Speaker)</td>
+        </tr>
+    </table>
+</div>
+
+<script>
+
+// SAFE LINK BUTTON FUNCTION
+function openSafeLink(){
+    alert("SAFE-LINK Project Opening Soon!");
+}
+
+</script>
+
+</body>
+</html>
