@@ -5,259 +5,102 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Tech Gen</title>
 
-<!-- Font Awesome Icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
 
-<style>
+<!-- Font Awesome -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-body{
-    margin:0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color:#dcdcdc;
-}
-
-/* HEADER */
-.header{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:10px 30px;
-    border-bottom:2px solid black;
-}
-
-.header h1{
-    color:#0b2a66;
-    font-size:40px;
-}
-
-/* LOGO SECTION */
-.logo{
-    text-align:center;
-    margin:20px 0;
-}
-
-.logo img{
-    width:120px;
-    border:2px solid black;
-    padding:10px;
-}
-
-/* SOCIAL ICONS */
-.social-icons{
-    position:absolute;
-    top:20px;
-    right:30px;
-}
-
-.social-icons a{
-    text-decoration:none;
-}
-
-.social-icons i{
-    font-size:30px;
-    margin:8px;
-    cursor:pointer;
-}
-
-/* PROJECT SECTION */
-.projects{
-    border:2px solid black;
-    margin:20px 40px;
-    padding:20px;
-}
-
-.project-grid{
-    display:grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap:20px;
-}
-
-/* SAFE LINK */
-.safe-link{
-    background:black;
-    color:red;
-    font-weight:bold;
-    font-size:24px;
-    text-align:center;
-    padding:20px;
-    cursor:pointer;
-    transition:0.3s;
-}
-
-.safe-link:hover{
-    background:red;
-    color:white;
-}
-
-/* COMING SOON CARDS */
-.card{
-    background:#87a9d6;
-    padding:30px;
-    text-align:center;
-    font-size:22px;
-    border:1px solid #3c6ea5;
-    cursor:pointer;
-    transition:0.3s;
-}
-
-.card:hover{
-    background:#3c6ea5;
-    color:white;
-}
-
-/* MEMBERS */
-.members{
-    margin:40px 100px;
-}
-
-table{
-    width:100%;
-    border-collapse:collapse;
-}
-
-th, td{
-    padding:15px;
-    text-align:left;
-}
-
-th{
-    border-bottom:2px solid black;
-}
-
-tr:nth-child(even){
-    background:#bfbfbf;
-}
-
-</style>
 </head>
-
 <body>
 
-<!-- HEADER -->
-<div class="header">
-    <h1>Tech Gen</h1>
-</div>
+<header class="header">
+
+    <h1 class="title">Tech Gen</h1>
+
+    <div class="social-icons">
+        <a href="https://youtube.com/@degree2code?si=CdZzpbszdMazziYV" target="_blank">
+            <i class="fab fa-youtube"></i>
+        </a>
+
+        <a href="https://t.me/degree2code" target="_blank">
+            <i class="fab fa-telegram"></i>
+        </a>
+
+        <!-- Add Instagram Link Here -->
+        <a href="#"><i class="fab fa-instagram"></i></a>
+
+        <!-- Add Facebook Link Here -->
+        <a href="#"><i class="fab fa-facebook"></i></a>
+
+        <a href="mailto:tech.gen.2005@gmail.com">
+            <i class="fas fa-envelope"></i>
+        </a>
+
+        <!-- Add WhatsApp Link Here -->
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+    </div>
+
+</header>
+
+<hr>
 
 <!-- LOGO -->
-<div class="logo">
-    <!-- 🔹 Upload logo.png in same folder -->
-    <img src="logo.png" alt="Logo">
-    <!-- If logo not showing, check file name & folder -->
-</div>
+<section class="logo-section">
+    <!-- Keep logo.png in same folder -->
+    <img src="logo.png" alt="Tech Gen Logo">
+</section>
 
-<!-- SOCIAL ICONS -->
-<div class="social-icons">
+<!-- PROJECTS -->
+<section class="projects">
 
-    <!-- 🔹 YouTube Link Added -->
-    <a href="https://youtube.com/@degree2code?si=CdZzpbszdMazziYV" target="_blank">
-        <i class="fab fa-youtube" style="color:red;"></i>
-    </a>
-
-    <!-- 🔹 Telegram Link Added -->
-    <a href="https://t.me/degree2code" target="_blank">
-        <i class="fab fa-telegram" style="color:#0088cc;"></i>
-    </a>
-
-    <!-- 🔹 Add Instagram Link Here -->
-    <!-- Replace # with your Instagram URL -->
-    <a href="#" target="_blank">
-        <i class="fab fa-instagram" style="color:#E1306C;"></i>
-    </a>
-
-    <!-- 🔹 Add Facebook Link Here -->
-    <a href="#" target="_blank">
-        <i class="fab fa-facebook" style="color:#1877F2;"></i>
-    </a>
-
-    <!-- 🔹 Email Added -->
-    <a href="mailto:tech.gen.2005@gmail.com">
-        <i class="fas fa-envelope" style="color:#D44638;"></i>
-    </a>
-
-    <!-- 🔹 Add WhatsApp Link Here -->
-    <!-- Example format: https://wa.me/91XXXXXXXXXX -->
-    <a href="#" target="_blank">
-        <i class="fab fa-whatsapp" style="color:#25D366;"></i>
-    </a>
-
-</div>
-
-<!-- PROJECT SECTION -->
-<div class="projects">
     <h2>Our Projects :</h2>
 
     <div class="project-grid">
 
-        <!-- 🔹 SAFE-LINK Connected -->
         <div class="safe-link" onclick="openSafeLink()">
             SAFE-LINK
         </div>
 
-        <!-- 🔹 Add project link inside onclick or wrap with <a> -->
-        <div class="card">
-            Coming Soon
-            <!-- Add Project Link Here -->
+        <!-- Add project link here -->
+        <div class="card">Coming Soon</div>
+        <div class="card">Coming Soon</div>
+        <div class="card">Coming Soon</div>
+        <div class="card">Coming Soon</div>
+        <div class="card">Coming Soon</div>
+        <div class="card">Coming Soon</div>
+        <div class="card">Coming Soon</div>
+
+    </div>
+
+</section>
+
+<!-- MEMBERS -->
+<section class="members">
+
+    <h2>Team Members</h2>
+
+    <div class="member-table">
+
+        <div class="table-header">
+            <div>Member Name</div>
+            <div>Member Position</div>
         </div>
 
-        <div class="card">
-            Coming Soon
-            <!-- Add Project Link Here -->
+        <div class="table-row">
+            <div>Shamanta Garai</div>
+            <div>Leader</div>
         </div>
 
-        <div class="card">
-            Coming Soon
-            <!-- Add Project Link Here -->
-        </div>
-
-        <div class="card">
-            Coming Soon
-            <!-- Add Project Link Here -->
-        </div>
-
-        <div class="card">
-            Coming Soon
-            <!-- Add Project Link Here -->
-        </div>
-
-        <div class="card">
-            Coming Soon
-            <!-- Add Project Link Here -->
-        </div>
-
-        <div class="card">
-            Coming Soon
-            <!-- Add Project Link Here -->
+        <div class="table-row">
+            <div>Tanwisha Mondal</div>
+            <div>1<sup>st</sup> Member (Speaker)</div>
         </div>
 
     </div>
-</div>
 
-<!-- MEMBERS -->
-<div class="members">
-    <table>
-        <tr>
-            <th>Member Name</th>
-            <th>Member Position</th>
-        </tr>
-        <tr>
-            <td>Shamanta Garai</td>
-            <td>Leader</td>
-        </tr>
-        <tr>
-            <td>Tanwisha Mondal</td>
-            <td>1<sup>st</sup> Member (Speaker)</td>
-        </tr>
-    </table>
-</div>
+</section>
 
-<script>
-
-// 🔹 SAFE LINK PROJECT REDIRECT
-function openSafeLink(){
-    window.open("https://fascinating-crostata-0627c3.netlify.app/", "_blank");
-}
-
-</script>
-
+<script src="script.js"></script>
 </body>
 </html>
