@@ -1,61 +1,99 @@
-/* HEADER FIX */
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 20px;
-    background: #dcdcdc;
-    border-bottom: 2px solid black;
-    flex-wrap: wrap;   /* 🔥 Important Fix */
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tech Gen</title>
 
-.logo-text {
-    font-size: 40px;
-    color: #0b2a66;
-    margin: 0;
-}
+<link rel="stylesheet" href="style.css">
 
-.social-icons {
-    display: flex;
-    flex-wrap: wrap;   /* 🔥 Important Fix */
-    justify-content: flex-end;
-}
+<!-- Font Awesome -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
 
-.social-icons a {
-    margin-left: 10px;
-    font-size: 26px;
-    text-decoration: none;
-}
+<body>
 
-.dark-btn {
-    margin-left: 10px;
-    padding: 4px 8px;
-    cursor: pointer;
-}
+<!-- HEADER -->
+<header class="header">
+    <h1 class="logo-text">Tech Gen</h1>
+</header>
 
-/* MOBILE FIX */
-@media (max-width: 768px) {
+<hr>
 
-    .header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+<!-- LOGO -->
+<section class="logo-section">
+    <img src="logo.png" alt="Tech Gen Logo">
+</section>
 
-    .social-icons {
-        width: 100%;
-        justify-content: flex-start;
-        margin-top: 10px;
-    }
+<!-- SOCIAL LINKS BLOCK -->
+<section class="social-block">
+    <h2>Social Links</h2>
 
-    .logo-text {
-        font-size: 28px;
-    }
+    <div class="block-grid">
 
-    .social-icons a {
-        font-size: 22px;
-        margin-right: 10px;
-    }
-}
+        <a href="https://youtube.com/@degree2code?si=CdZzpbszdMazziYV" target="_blank" class="block-card">
+            <i class="fab fa-youtube"></i>
+            <p>YouTube</p>
+        </a>
+
+        <a href="https://t.me/degree2code" target="_blank" class="block-card">
+            <i class="fab fa-telegram"></i>
+            <p>Telegram</p>
+        </a>
+
+        <!-- Add Instagram Link Here -->
+        <a href="#" class="block-card">
+            <i class="fab fa-instagram"></i>
+            <p>Instagram</p>
+        </a>
+
+        <!-- Add Facebook Link Here -->
+        <a href="#" class="block-card">
+            <i class="fab fa-facebook"></i>
+            <p>Facebook</p>
+        </a>
+
+        <a href="mailto:tech.gen.2005@gmail.com" class="block-card">
+            <i class="fas fa-envelope"></i>
+            <p>Email</p>
+        </a>
+
+        <!-- Add WhatsApp Link Here -->
+        <a href="#" class="block-card">
+            <i class="fab fa-whatsapp"></i>
+            <p>WhatsApp</p>
+        </a>
+
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="projects">
+    <h2>Our Projects</h2>
+
+    <div class="block-grid">
+
+        <div class="safe-link" onclick="openSafeLink()">
+            SAFE-LINK
+        </div>
+
+        <div class="block-card">Coming Soon</div>
+      <!--  
+      <div class="block-card">Coming Soon</div>
+        <div class="block-card">Coming Soon</div>
+-->
+    </div>
+</section>
+
+<!-- HACKATHON SECTION -->
+<section class="hackathon">
+    <h2>Hackathon</h2>
+
+    <div class="block-grid">
+        <div class="block-card">Coming Soon</div>
+    </div>
+</section>
 <!-- TEAM -->
 <section class="members fade-in">
 
