@@ -19,7 +19,7 @@ body.dark {
     padding: 15px 20px;
     background: #dcdcdc;
     border-bottom: 2px solid black;
-    flex-wrap: wrap;   /* 🔥 Important Fix */
+    flex-wrap: wrap;
 }
 
 .logo-text {
@@ -30,7 +30,7 @@ body.dark {
 
 .social-icons {
     display: flex;
-    flex-wrap: wrap;   /* 🔥 Important Fix */
+    flex-wrap: wrap;
     justify-content: flex-end;
 }
 
@@ -69,6 +69,7 @@ body.dark {
         margin-right: 10px;
     }
 }
+
 /* LOGO */
 .logo-section {
     text-align: center;
@@ -178,4 +179,43 @@ body.dark .member-card {
     .menu-toggle {
         display: block;
     }
+}
+
+/* ============================= */
+/* 🔥 ADDED MISSING STYLES ONLY */
+/* ============================= */
+
+/* Social + Hackathon Sections */
+.social-block,
+.hackathon {
+    padding: 40px;
+}
+
+/* Common Grid Used in HTML */
+.block-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+}
+
+/* Common Card Used in HTML */
+.block-card {
+    background: #87a9d6;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+
+.block-card i {
+    font-size: 28px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.block-card:hover {
+    transform: translateY(-6px);
 }
