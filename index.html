@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Tech Gen</title>
 
-<!-- Font Awesome for Icons -->
+<!-- Font Awesome Icons -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
@@ -30,7 +30,7 @@ body{
     font-size:40px;
 }
 
-/* Logo Center */
+/* LOGO SECTION */
 .logo{
     text-align:center;
     margin:20px 0;
@@ -42,11 +42,15 @@ body{
     padding:10px;
 }
 
-/* Social Icons */
+/* SOCIAL ICONS */
 .social-icons{
     position:absolute;
     top:20px;
     right:30px;
+}
+
+.social-icons a{
+    text-decoration:none;
 }
 
 .social-icons i{
@@ -55,15 +59,11 @@ body{
     cursor:pointer;
 }
 
-/* Project Section */
+/* PROJECT SECTION */
 .projects{
     border:2px solid black;
     margin:20px 40px;
     padding:20px;
-}
-
-.projects h2{
-    margin-bottom:20px;
 }
 
 .project-grid{
@@ -89,7 +89,7 @@ body{
     color:white;
 }
 
-/* Coming Soon Cards */
+/* COMING SOON CARDS */
 .card{
     background:#87a9d6;
     padding:30px;
@@ -105,7 +105,7 @@ body{
     color:white;
 }
 
-/* Members Table */
+/* MEMBERS */
 .members{
     margin:40px 100px;
 }
@@ -140,17 +140,46 @@ tr:nth-child(even){
 
 <!-- LOGO -->
 <div class="logo">
+    <!-- 🔹 Upload logo.png in same folder -->
     <img src="logo.png" alt="Logo">
+    <!-- If logo not showing, check file name & folder -->
 </div>
 
 <!-- SOCIAL ICONS -->
 <div class="social-icons">
-    <i class="fab fa-youtube" style="color:red;"></i>
-    <i class="fab fa-instagram" style="color:#E1306C;"></i>
-    <i class="fab fa-facebook" style="color:#1877F2;"></i>
-    <i class="fab fa-telegram" style="color:#0088cc;"></i>
-    <i class="fas fa-envelope" style="color:#D44638;"></i>
-    <i class="fab fa-whatsapp" style="color:#25D366;"></i>
+
+    <!-- 🔹 YouTube Link Added -->
+    <a href="https://youtube.com/@degree2code?si=CdZzpbszdMazziYV" target="_blank">
+        <i class="fab fa-youtube" style="color:red;"></i>
+    </a>
+
+    <!-- 🔹 Telegram Link Added -->
+    <a href="https://t.me/degree2code" target="_blank">
+        <i class="fab fa-telegram" style="color:#0088cc;"></i>
+    </a>
+
+    <!-- 🔹 Add Instagram Link Here -->
+    <!-- Replace # with your Instagram URL -->
+    <a href="#" target="_blank">
+        <i class="fab fa-instagram" style="color:#E1306C;"></i>
+    </a>
+
+    <!-- 🔹 Add Facebook Link Here -->
+    <a href="#" target="_blank">
+        <i class="fab fa-facebook" style="color:#1877F2;"></i>
+    </a>
+
+    <!-- 🔹 Email Added -->
+    <a href="mailto:tech.gen.2005@gmail.com">
+        <i class="fas fa-envelope" style="color:#D44638;"></i>
+    </a>
+
+    <!-- 🔹 Add WhatsApp Link Here -->
+    <!-- Example format: https://wa.me/91XXXXXXXXXX -->
+    <a href="#" target="_blank">
+        <i class="fab fa-whatsapp" style="color:#25D366;"></i>
+    </a>
+
 </div>
 
 <!-- PROJECT SECTION -->
@@ -159,21 +188,51 @@ tr:nth-child(even){
 
     <div class="project-grid">
 
-        <div class="safe-link" onclick="openSafeLink()">SAFE-LINK</div>
+        <!-- 🔹 SAFE-LINK Connected -->
+        <div class="safe-link" onclick="openSafeLink()">
+            SAFE-LINK
+        </div>
 
-        <div class="card">Coming Soon</div>
-        <div class="card">Coming Soon</div>
-        <div class="card">Coming Soon</div>
+        <!-- 🔹 Add project link inside onclick or wrap with <a> -->
+        <div class="card">
+            Coming Soon
+            <!-- Add Project Link Here -->
+        </div>
 
-        <div class="card">Coming Soon</div>
-        <div class="card">Coming Soon</div>
-        <div class="card">Coming Soon</div>
-        <div class="card">Coming Soon</div>
+        <div class="card">
+            Coming Soon
+            <!-- Add Project Link Here -->
+        </div>
+
+        <div class="card">
+            Coming Soon
+            <!-- Add Project Link Here -->
+        </div>
+
+        <div class="card">
+            Coming Soon
+            <!-- Add Project Link Here -->
+        </div>
+
+        <div class="card">
+            Coming Soon
+            <!-- Add Project Link Here -->
+        </div>
+
+        <div class="card">
+            Coming Soon
+            <!-- Add Project Link Here -->
+        </div>
+
+        <div class="card">
+            Coming Soon
+            <!-- Add Project Link Here -->
+        </div>
 
     </div>
 </div>
 
-<!-- MEMBERS SECTION -->
+<!-- MEMBERS -->
 <div class="members">
     <table>
         <tr>
@@ -193,9 +252,9 @@ tr:nth-child(even){
 
 <script>
 
-// SAFE LINK BUTTON FUNCTION
+// 🔹 SAFE LINK PROJECT REDIRECT
 function openSafeLink(){
-    alert("SAFE-LINK Project Opening Soon!");
+    window.open("https://fascinating-crostata-0627c3.netlify.app/", "_blank");
 }
 
 </script>
