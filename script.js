@@ -1,3 +1,3 @@
 function openSafeLink(){
-    window.open("https://fascinating-crostata-0627c3.netlify.app/", "_blank");
+    window.open("https://tg-safe-link.netlify.app/", "_blank");
 }
