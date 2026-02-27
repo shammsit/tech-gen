@@ -1,3 +1,3 @@
 function openSafeLink(){
-    window.open("https://tg-safe-link.netlify.app/", "_blank");
+    window.open("https://safelink.techgen.online/", "_blank");
 }
