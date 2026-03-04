@@ -1,3 +1,3 @@
 function openSafeLink(){
-    window.open("https://safelink.techgen.online/", "_blank");
+    window.open("https://safe-link.techgen.online/", "_blank");
 }
