@@ -224,38 +224,58 @@ body.dark .member-card {
 
 
 /* ================= FOOTER ================= */
+/* ================= PERFECT RESPONSIVE FOOTER ================= */
 .footer {
     background: #e7e9ec;
-    color: rgb(0, 0, 0);
-    padding: 25px 20px;
-    margin-top: 40px;
+    color: #000;
+    padding: 30px 20px;
+    margin-top: 50px;
     font-family: Arial, sans-serif;
+    box-shadow: 0 -5px 15px rgba(0,0,0,0.1);
 }
 
+/* FLEX CONTAINER */
 .footer-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    gap: 20px;
     flex-wrap: wrap;
 }
 
-/* Left */
+/* LEFT */
+.footer-left {
+    flex: 1;
+    min-width: 200px;
+}
+
 .footer-left h3 {
     margin: 0;
+    font-size: 20px;
 }
 
 .footer-left p {
+    margin: 6px 0;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* CENTER */
+.footer-center {
+    flex: 1;
+    text-align: center;
+    min-width: 200px;
+}
+
+.footer-center p {
     margin: 5px 0;
     font-size: 14px;
 }
 
-/* Center */
-.footer-center {
-    text-align: center;
-}
-
 .footer-center a {
-    color: #64b5f6;
+    color: #1e88e5;
     text-decoration: none;
 }
 
@@ -263,15 +283,50 @@ body.dark .member-card {
     text-decoration: underline;
 }
 
-/* Right Button */
+/* RIGHT */
+.footer-right {
+    flex: 1;
+    text-align: right;
+    min-width: 200px;
+}
+
+/* BUTTON */
 .footer-btn {
     background: #1e88e5;
     color: white;
-    padding: 8px 14px;
-    border-radius: 5px;
+    padding: 10px 16px;
+    border-radius: 6px;
     text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+    display: inline-block;
 }
 
 .footer-btn:hover {
     background: #1565c0;
+    transform: scale(1.05);
+}
+
+/* ================= MOBILE FIX ================= */
+@media (max-width: 768px) {
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-left,
+    .footer-center,
+    .footer-right {
+        text-align: center;
+    }
+
+    .footer-right {
+        margin-top: 10px;
+    }
+
+    .footer-btn {
+        width: 100%;
+        max-width: 200px;
+    }
 }
