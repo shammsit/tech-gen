@@ -1,0 +1,309 @@
+/* Global */
+body {
+    margin: 0;
+    background: #ffffff;
+    font-family: "Courier New", monospace;
+}
+
+/* Paper Layout */
+.paper {
+    width: 800px;
+    margin: 30px auto;
+}
+
+pre {
+    font-size: 16px;
+    line-height: 1.6;
+    white-space: pre;
+}
+
+/* Buttons */
+.btn {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    padding: 6px 14px;
+    border: 1px solid black;
+    background: white;
+    cursor: pointer;
+}
+
+/* ================= HEADER ================= */
+/* ================= HEADER (MATCH FOOTER STYLE) ================= */
+.header {
+    position: sticky;
+    top: 0;
+    background: #fcfdfe;   /* same as footer */
+    color: rgb(0, 0, 0);
+    z-index: 1000;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    border-bottom: 2px solid #000;
+}
+
+/* Layout like footer */
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Title */
+.header h2 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Home Icon */
+.home-icon {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+/* SVG color white */
+.home-icon svg path {
+    stroke: rgb(0, 0, 0);
+}
+
+/* Hover */
+.home-icon:hover {
+    transform: translateY(-50%) scale(1.15);
+}
+/* ================= IMAGE ================= */
+.top-img {
+    position: absolute;
+    top: 80px;
+    right: 40px;
+    width: 120px;
+}
+
+/* ================= PROFILE BOX ================= */
+.profile-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid black;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.profile-text h2 {
+    margin: 0 0 10px 0;
+}
+
+.profile-text p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.profile-img img {
+    width: 120px;
+    height: 140px;
+    object-fit: cover;
+    border: 1px solid black;
+}
+
+/* ================= LINKS ================= */
+.email {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.email:hover {
+    text-decoration: underline;
+}
+
+.phone {
+    color: #25D366;
+    text-decoration: none;
+}
+
+.phone:hover {
+    text-decoration: underline;
+}
+
+/* ================= ABOUT ================= */
+.about-box {
+    border: 2px solid black;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.about-box h3 {
+    margin-bottom: 10px;
+}
+
+.about-box p {
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* ================= EDUCATION ================= */
+.edu-box {
+    border: 2px solid black;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.edu-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.edu-table td {
+    padding: 8px 10px;
+}
+
+.edu-table td:last-child {
+    text-align: center;
+}
+
+.pdf-svg {
+    width: 24px;
+    cursor: pointer;
+}
+
+.pdf-svg:hover {
+    transform: scale(1.2);
+}
+
+/* ================= SKILLS ================= */
+.skills-box {
+    border: 2px solid black;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.skills-table {
+    width: 100%;
+}
+
+.skills-table td {
+    padding: 8px;
+}
+
+/* ================= PROJECT ================= */
+.project-box {
+    border: 2px solid black;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.project-table {
+    width: 100%;
+}
+
+.project-table td {
+    padding: 10px;
+}
+
+/* Buttons */
+.btn-link {
+    background: #0a192f;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn-group {
+    background: #1e88e5;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn-partner {
+    background: #2e7d32;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn-link:hover,
+.btn-group:hover,
+.btn-partner:hover {
+    opacity: 0.85;
+}
+
+/* Processing Animation */
+.status.processing {
+    width: 12px;
+    height: 12px;
+    background: #fbc02d;
+    border-radius: 50%;
+    display: inline-block;
+    animation: pulse 1.2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.4); }
+    100% { transform: scale(1); }
+}
+
+/* ================= FOOTER ================= */
+.footer {
+    background: #e7e9ec;
+    color: rgb(0, 0, 0);
+    padding: 25px 20px;
+    margin-top: 40px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Left */
+.footer-left h3 {
+    margin: 0;
+}
+
+.footer-left p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+/* Center */
+.footer-center {
+    text-align: center;
+}
+
+.footer-center a {
+    color: #64b5f6;
+    text-decoration: none;
+}
+
+.footer-center a:hover {
+    text-decoration: underline;
+}
+
+/* Right Button */
+.footer-btn {
+    background: #1e88e5;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.footer-btn:hover {
+    background: #1565c0;
+}
