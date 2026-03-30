@@ -7,8 +7,9 @@ body {
 
 /* Paper Layout */
 .paper {
-    width: 800px;
-    margin: 30px auto;
+    max-width: 800px;
+    width: 95%;
+    margin: 20px auto;
 }
 
 pre {
@@ -93,7 +94,18 @@ button {
     margin-bottom: 20px;
     font-family: Arial, sans-serif;
 }
+@media (max-width: 768px) {
+    .profile-box {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
 
+    .profile-img img {
+        width: 100px;
+        height: 120px;
+    }
+}
 .profile-text h2 {
     margin: 0 0 10px 0;
 }
@@ -256,54 +268,55 @@ button {
 }
 
 /* ================= FOOTER ================= */
-.footer {
-    background: #e7e9ec;
-    color: rgb(0, 0, 0);
-    padding: 25px 20px;
-    margin-top: 40px;
-    font-family: Arial, sans-serif;
-}
-
 .footer-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1000px;
+    margin: auto;
     flex-wrap: wrap;
+    gap: 15px;
 }
 
-/* Left */
-.footer-left h3 {
-    margin: 0;
+.footer-left,
+.footer-center,
+.footer-right {
+    flex: 1;
+    min-width: 200px;
 }
 
-.footer-left p {
-    margin: 5px 0;
-    font-size: 14px;
-}
+/* MOBILE */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
 
-/* Center */
-.footer-center {
-    text-align: center;
+    .footer-right {
+        margin-top: 10px;
+    }
 }
+@media (max-width: 768px) {
 
-.footer-center a {
-    color: #64b5f6;
-    text-decoration: none;
+    .edu-table,
+    .skills-table,
+    .project-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
 }
+@media (max-width: 768px) {
 
-.footer-center a:hover {
-    text-decoration: underline;
+    .header h2 {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .home-icon {
+        left: 10px;
+    }
 }
-
-/* Right Button */
-.footer-btn {
-    background: #1e88e5;
-    color: white;
-    padding: 8px 14px;
-    border-radius: 5px;
-    text-decoration: none;
-}
-
-.footer-btn:hover {
-    background: #1565c0;
+* {
+    box-sizing: border-box;
 }
