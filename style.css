@@ -219,3 +219,59 @@ body.dark .member-card {
 .block-card:hover {
     transform: translateY(-6px);
 }
+
+
+
+
+/* ================= FOOTER ================= */
+.footer {
+    background: #e7e9ec;
+    color: rgb(0, 0, 0);
+    padding: 25px 20px;
+    margin-top: 40px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Left */
+.footer-left h3 {
+    margin: 0;
+}
+
+.footer-left p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+/* Center */
+.footer-center {
+    text-align: center;
+}
+
+.footer-center a {
+    color: #64b5f6;
+    text-decoration: none;
+}
+
+.footer-center a:hover {
+    text-decoration: underline;
+}
+
+/* Right Button */
+.footer-btn {
+    background: #1e88e5;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.footer-btn:hover {
+    background: #1565c0;
+}
