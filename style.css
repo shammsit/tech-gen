@@ -331,90 +331,90 @@ body.dark .member-card {
     }
 }
 
-/* HEADER ACTION BUTTONS */
-.header {
-    position: relative;
-}
-
-/* Right side container */
+/* HEADER ACTION BUTTONS - PROFESSIONAL */
 .header-actions {
     position: absolute;
     right: 20px;
     top: 50%;
     transform: translateY(-50%);
     display: flex;
-    gap: 12px;
+    gap: 10px;
 }
 
 /* Base button */
 .icon-btn {
-    width: 36px;
-    height: 36px;
-    border: 2px solid black;
-    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    border: 1.5px solid #1a1a1a;
+    border-radius: 10px; /* square-rounded = modern */
+    background: #ffffff;
     position: relative;
     display: inline-block;
-    transition: 0.3s;
-    background: white;
+    transition: all 0.25s ease;
 }
 
-/* Hover effect */
+/* Hover (modern subtle) */
 .icon-btn:hover {
-    background: black;
+    background: #1a1a1a;
+    transform: translateY(-2px);
 }
 
-/* ================= ABOUT (i icon) ================= */
+/* ================= ABOUT (clean i) ================= */
 .about-btn::before {
     content: "i";
+    font-family: Arial, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #1a1a1a;
+
     position: absolute;
-    font-weight: bold;
-    font-family: serif;
-    font-size: 18px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-/* Hover color */
 .about-btn:hover::before {
-    color: white;
+    color: #ffffff;
 }
 
-/* ================= CONTACT (mail icon) ================= */
+/* ================= CONTACT (professional envelope) ================= */
 .contact-btn::before {
     content: "";
     position: absolute;
-    width: 16px;
-    height: 10px;
-    border: 2px solid black;
+    width: 18px;
+    height: 12px;
+    border: 1.5px solid #1a1a1a;
+    border-radius: 2px;
+
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-/* Envelope triangle */
+/* flap */
 .contact-btn::after {
     content: "";
     position: absolute;
-    width: 12px;
-    height: 12px;
-    border-left: 2px solid black;
-    border-bottom: 2px solid black;
-    transform: translate(-50%, -60%) rotate(-45deg);
+    width: 10px;
+    height: 10px;
+    border-left: 1.5px solid #1a1a1a;
+    border-bottom: 1.5px solid #1a1a1a;
+
+    transform: translate(-50%, -65%) rotate(-45deg);
     top: 50%;
     left: 50%;
 }
 
-/* Hover color */
+/* hover color fix */
 .contact-btn:hover::before,
 .contact-btn:hover::after {
-    border-color: white;
+    border-color: #ffffff;
 }
 
-/* MOBILE FIX */
+/* ================= MOBILE ================= */
 @media (max-width: 768px) {
     .icon-btn {
-        width: 30px;
-        height: 30px;
+        width: 32px;
+        height: 32px;
     }
 }
