@@ -330,3 +330,91 @@ body.dark .member-card {
         max-width: 200px;
     }
 }
+
+/* HEADER ACTION BUTTONS */
+.header {
+    position: relative;
+}
+
+/* Right side container */
+.header-actions {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    gap: 12px;
+}
+
+/* Base button */
+.icon-btn {
+    width: 36px;
+    height: 36px;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: relative;
+    display: inline-block;
+    transition: 0.3s;
+    background: white;
+}
+
+/* Hover effect */
+.icon-btn:hover {
+    background: black;
+}
+
+/* ================= ABOUT (i icon) ================= */
+.about-btn::before {
+    content: "i";
+    position: absolute;
+    font-weight: bold;
+    font-family: serif;
+    font-size: 18px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Hover color */
+.about-btn:hover::before {
+    color: white;
+}
+
+/* ================= CONTACT (mail icon) ================= */
+.contact-btn::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 10px;
+    border: 2px solid black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Envelope triangle */
+.contact-btn::after {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    transform: translate(-50%, -60%) rotate(-45deg);
+    top: 50%;
+    left: 50%;
+}
+
+/* Hover color */
+.contact-btn:hover::before,
+.contact-btn:hover::after {
+    border-color: white;
+}
+
+/* MOBILE FIX */
+@media (max-width: 768px) {
+    .icon-btn {
+        width: 30px;
+        height: 30px;
+    }
+}
