@@ -8,10 +8,26 @@ body {
 .header {
     position: sticky;
     top: 0;
-    background: #fcfdfe;
-    border-bottom: 2px solid #000;
+    background: #fcfdfe;   /* same as footer */
+    color: rgb(0, 0, 0);
+    z-index: 1000;
     padding: 20px;
-    text-align: center;
+    font-family: Arial, sans-serif;
+    border-bottom: 2px solid #000;
+}
+
+/* Layout like footer */
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Title */
+.header h2 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 .home-icon {
@@ -82,9 +98,28 @@ body {
 /* FOOTER */
 .footer {
     background: #e7e9ec;
-    padding: 25px;
+    color: #000;
+    padding: 25px 15px;
     margin-top: 40px;
+    font-family: Arial, sans-serif;
 }
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: auto;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+    flex: 1;
+    min-width: 200px;
+}
+
 
 /* ANIMATION */
 .fade-in {
@@ -96,4 +131,17 @@ body {
 .fade-in.show {
     opacity: 1;
     transform: translateY(0);
+}
+
+/* LOGO */
+.logo-section {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.logo-section img {
+    width: 220px;
+    max-width: 80%;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
 }
