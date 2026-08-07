@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "name": "Restaurant Website",
+    "price": 2499,
+    "mrp": 4999,
+    "offer": "50%",
+    "category": "Business",
+    "description": "Professional responsive restaurant website with menu, gallery, Google Maps and WhatsApp.",
+    "image": "images/restaurant.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Tutor's Website",
+    "price": 1999,
+    "mrp": 3999,
+    "offer": "50%",
+    "category": "Education",
+    "description": "Website for coaching centers, tutors and teachers with enquiry form.",
+    "image": "images/tutor.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Portfolio Website",
+    "price": 1999,
+    "mrp": 2999,
+    "offer": "33%",
+    "category": "Portfolio",
+    "description": "Personal portfolio for students and professionals.",
+    "image": "images/portfolio.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Business Website",
+    "price": 4999,
+    "mrp": 7499,
+    "offer": "35%",
+    "category": "Business",
+    "description": "Professional company website with contact forms and SEO.",
+    "image": "images/business.jpg"
+  },
+  {
+    "id": 5,
+    "name": "E-Commerce Website",
+    "price": 9999,
+    "mrp": 12999,
+    "offer": "23%",
+    "category": "E-Commerce",
+    "description": "Online shopping website with admin panel and payment integration.",
+    "image": "images/ecommerce.jpg"
+  }
+]
